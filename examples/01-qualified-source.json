@@ -1,0 +1,28 @@
+{
+  "res_version": "1.0-draft",
+  "version": "1",
+  "created_at": "2026-10-12T15:00:00Z",
+  "provenance": [],
+  "object_type": "qualified_source",
+  "id": "source:example-1",
+  "source_type": "runtime-log",
+  "source_reference": "urn:example:source:1",
+  "adapter_id": "example.adapter",
+  "adapter_version": "1.0",
+  "qualification_status": "qualified_with_limitations",
+  "source_digest": {
+    "algorithm": "sha256",
+    "digest": "EXAMPLE_NOT_A_REAL_DIGEST",
+    "scope": "raw source bytes"
+  },
+  "missingness": [
+    {
+      "code": "not_supplied",
+      "field": "provider_internal_state",
+      "reason": "outside supplied source"
+    }
+  ],
+  "coverage": {
+    "declared": "complete for supplied log only"
+  }
+}

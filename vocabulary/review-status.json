@@ -1,0 +1,23 @@
+{
+  "namespace": "urn:substratex:res:1.0:vocab:review-status",
+  "terms": [
+    {
+      "id": "unchallenged"
+    },
+    {
+      "id": "challenged"
+    },
+    {
+      "id": "under_review"
+    },
+    {
+      "id": "disputed"
+    },
+    {
+      "id": "superseded"
+    },
+    {
+      "id": "withdrawn"
+    }
+  ]
+}

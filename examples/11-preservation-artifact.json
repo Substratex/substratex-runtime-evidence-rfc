@@ -1,0 +1,47 @@
+{
+  "res_version": "1.0-draft",
+  "version": "1",
+  "created_at": "2026-10-12T15:00:00Z",
+  "provenance": [],
+  "object_type": "preservation_artifact",
+  "id": "artifact:example-1",
+  "evidence_record_id": "crer:example-1",
+  "run_id": "run:example-1",
+  "canonical_runtime_id": "canonical:example-1",
+  "object_inventory": [
+    "source:example-1",
+    "canonical:example-1",
+    "crer:example-1",
+    "finding:example-1",
+    "passport:example-1",
+    "seal:example-1",
+    "challenge:example-1",
+    "review:example-1"
+  ],
+  "disclosure_posture": "metadata_only",
+  "redactions": [
+    {
+      "scope": "source content",
+      "reason": "example artifact omits source bytes"
+    }
+  ],
+  "integrity_refs": [
+    {
+      "algorithm": "sha256",
+      "digest": "EXAMPLE_ARTIFACT_DIGEST",
+      "scope": "artifact manifest"
+    }
+  ],
+  "review_state": {
+    "status": "under_review",
+    "challenge_ids": [
+      "challenge:example-1"
+    ],
+    "review_ids": [
+      "review:example-1"
+    ]
+  },
+  "loss_disclosures": [
+    "Source bytes are not included; independent source recomputation is not possible from this artifact alone."
+  ]
+}

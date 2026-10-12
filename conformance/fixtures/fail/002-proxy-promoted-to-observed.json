@@ -1,0 +1,7 @@
+{
+  "case": "support_class_promotion",
+  "description": "Non-conforming semantic example: proxy evidence is presented as source_observed without a new evidentiary basis.",
+  "input_support_class": "proxy",
+  "output_support_class": "source_observed",
+  "expected": "fail"
+}

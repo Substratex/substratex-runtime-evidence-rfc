@@ -1,0 +1,40 @@
+{
+  "res_version": "1.0-draft",
+  "version": "1",
+  "created_at": "2026-10-12T15:00:00Z",
+  "provenance": [],
+  "object_type": "runtime_evidence_passport",
+  "id": "passport:example-1",
+  "evidence_record_id": "crer:example-1",
+  "run_id": "run:example-1",
+  "canonical_runtime_id": "canonical:example-1",
+  "source_qualification_refs": [
+    "source:example-1"
+  ],
+  "governing_versions": {
+    "res": "1.0-draft",
+    "method.example": "1.0"
+  },
+  "issuance_profile": "RES-Issuance",
+  "issuance_result": "issued",
+  "integrity_refs": [
+    {
+      "algorithm": "sha256",
+      "digest": "EXAMPLE_RER_DIGEST",
+      "scope": "RER evidence-bearing core"
+    }
+  ],
+  "disclosure_state": {
+    "posture": "metadata_only"
+  },
+  "claim_boundary_summary": {
+    "finding:example-1": "sequence only; no causal attribution"
+  },
+  "non_certifications": [
+    "source_truth",
+    "causality",
+    "safety",
+    "scientific_validity",
+    "legal_sufficiency"
+  ]
+}

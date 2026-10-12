@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:substratex:res:1.0:schema:current-evidence-run",
+  "title": "RES Current Evidence Run",
+  "allOf": [
+    {
+      "$ref": "urn:substratex:res:1.0:schema:common#/$defs/baseEnvelope"
+    },
+    {
+      "type": "object",
+      "required": [
+        "object_type",
+        "canonical_runtime_id",
+        "source_ids",
+        "governing_versions",
+        "deterministic_scope",
+        "formation_status"
+      ],
+      "properties": {
+        "object_type": {
+          "const": "current_evidence_run"
+        },
+        "canonical_runtime_id": {
+          "type": "string"
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "governing_versions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "deterministic_scope": {
+          "type": "object",
+          "additionalProperties": true
+        },
+        "formation_status": {
+          "enum": [
+            "forming",
+            "formed",
+            "failed",
+            "cancelled",
+            "superseded"
+          ]
+        },
+        "evidence_status_summary": {
+          "type": "object",
+          "additionalProperties": true
+        },
+        "missingness": {
+          "type": "array",
+          "items": {
+            "$ref": "urn:substratex:res:1.0:schema:common#/$defs/missingness"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:substratex:res:1.0:schema:supersession",
+  "title": "RES Supersession",
+  "allOf": [
+    {
+      "$ref": "urn:substratex:res:1.0:schema:common#/$defs/baseEnvelope"
+    },
+    {
+      "type": "object",
+      "required": [
+        "object_type",
+        "predecessor_id",
+        "successor_id",
+        "reason"
+      ],
+      "properties": {
+        "object_type": {
+          "const": "supersession"
+        },
+        "predecessor_id": {
+          "type": "string"
+        },
+        "successor_id": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "effective_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "retained_challenge_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  ]
+}

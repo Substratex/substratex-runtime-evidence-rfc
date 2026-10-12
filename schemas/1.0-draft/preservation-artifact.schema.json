@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:substratex:res:1.0:schema:preservation-artifact",
+  "title": "RES Preservation Artifact",
+  "allOf": [
+    {
+      "$ref": "urn:substratex:res:1.0:schema:common#/$defs/baseEnvelope"
+    },
+    {
+      "type": "object",
+      "required": [
+        "object_type",
+        "evidence_record_id",
+        "run_id",
+        "canonical_runtime_id",
+        "object_inventory",
+        "disclosure_posture"
+      ],
+      "properties": {
+        "object_type": {
+          "const": "preservation_artifact"
+        },
+        "evidence_record_id": {
+          "type": "string"
+        },
+        "run_id": {
+          "type": "string"
+        },
+        "canonical_runtime_id": {
+          "type": "string"
+        },
+        "object_inventory": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "disclosure_posture": {
+          "enum": [
+            "metadata_only",
+            "derived_evidence_only",
+            "redacted_source",
+            "complete_source"
+          ]
+        },
+        "redactions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "integrity_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "urn:substratex:res:1.0:schema:common#/$defs/integrityRef"
+          }
+        },
+        "review_state": {
+          "$ref": "urn:substratex:res:1.0:schema:common#/$defs/reviewState"
+        },
+        "loss_disclosures": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  ]
+}

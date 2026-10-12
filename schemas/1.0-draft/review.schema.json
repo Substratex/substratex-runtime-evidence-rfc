@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:substratex:res:1.0:schema:review",
+  "title": "RES Review",
+  "allOf": [
+    {
+      "$ref": "urn:substratex:res:1.0:schema:common#/$defs/baseEnvelope"
+    },
+    {
+      "type": "object",
+      "required": [
+        "object_type",
+        "challenge_ids",
+        "reviewer",
+        "evidence_considered",
+        "outcome"
+      ],
+      "properties": {
+        "object_type": {
+          "const": "review"
+        },
+        "challenge_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "reviewer": {
+          "type": "object",
+          "additionalProperties": true
+        },
+        "evidence_considered": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "method_or_policy_ref": {
+          "type": "string"
+        },
+        "outcome": {
+          "enum": [
+            "upheld",
+            "rejected",
+            "partially_upheld",
+            "unresolved",
+            "superseded"
+          ]
+        },
+        "reasoning_ref": {
+          "type": "string"
+        }
+      }
+    }
+  ]
+}

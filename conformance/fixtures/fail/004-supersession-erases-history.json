@@ -1,0 +1,6 @@
+{
+  "case": "destructive_supersession",
+  "description": "Non-conforming semantic example: predecessor is deleted when successor becomes current.",
+  "predecessor_retained": false,
+  "expected": "fail"
+}

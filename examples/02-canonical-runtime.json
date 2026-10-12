@@ -1,0 +1,49 @@
+{
+  "res_version": "1.0-draft",
+  "version": "1",
+  "created_at": "2026-10-12T15:00:00Z",
+  "provenance": [],
+  "object_type": "canonical_runtime",
+  "id": "canonical:example-1",
+  "source_ids": [
+    "source:example-1"
+  ],
+  "canonicalization_contract": {
+    "id": "example.canonicalizer",
+    "version": "1.0"
+  },
+  "ordering": {
+    "source_semantics": "line order",
+    "canonical_semantics": "stable ordinal"
+  },
+  "temporal_coordinate_systems": [
+    "ordinal"
+  ],
+  "events": [
+    {
+      "event_id": "event:1",
+      "event_type": "request",
+      "order_index": 1,
+      "source_refs": [
+        "source:example-1#line=1"
+      ],
+      "role_ref": "user",
+      "payload_ref": "source:example-1#line=1"
+    },
+    {
+      "event_id": "event:2",
+      "event_type": "response",
+      "order_index": 2,
+      "source_refs": [
+        "source:example-1#line=2"
+      ],
+      "role_ref": "system",
+      "payload_ref": "source:example-1#line=2"
+    }
+  ],
+  "canonical_digest": {
+    "algorithm": "sha256",
+    "digest": "EXAMPLE_CANONICAL_DIGEST",
+    "scope": "canonical events + ordering + role mapping"
+  }
+}

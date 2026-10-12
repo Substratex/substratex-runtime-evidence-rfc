@@ -1,0 +1,29 @@
+{
+  "namespace": "urn:substratex:res:1.0:vocab:support-class",
+  "terms": [
+    {
+      "id": "source_observed",
+      "definition": "Directly located, parsed, counted, or recorded from qualified source material."
+    },
+    {
+      "id": "computed",
+      "definition": "Produced by a declared computation over eligible evidence without interpretive extension."
+    },
+    {
+      "id": "derived",
+      "definition": "Produced through a declared derivation from evidence or parent objects."
+    },
+    {
+      "id": "proxy",
+      "definition": "A bounded indicator standing in for a construct that is not directly observed."
+    },
+    {
+      "id": "interpretive",
+      "definition": "An interpretation over evidence under a declared method or ontology."
+    },
+    {
+      "id": "experimental",
+      "definition": "A research-stage measurement or interpretation with explicitly limited validation state."
+    }
+  ]
+}

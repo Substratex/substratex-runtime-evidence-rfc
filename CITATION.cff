@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you cite the Runtime Evidence Standard RFC track, cite this repository and the specific RFC/version used."
+title: "Runtime Evidence Standard (RES) — Request for Comment"
+type: software
+version: "1.0-rfc-draft"
+date-released: 2026-10-12
+authors:
+  - family-names: Asadi
+    given-names: Arjay
+publisher: "SubstrateX"

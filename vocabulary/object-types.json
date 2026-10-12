@@ -1,0 +1,41 @@
+{
+  "namespace": "urn:substratex:res:1.0:vocab:object-type",
+  "terms": [
+    {
+      "id": "qualified_source"
+    },
+    {
+      "id": "canonical_runtime"
+    },
+    {
+      "id": "current_evidence_run"
+    },
+    {
+      "id": "runtime_evidence_record"
+    },
+    {
+      "id": "bounded_finding"
+    },
+    {
+      "id": "certified_runtime_evidence_record"
+    },
+    {
+      "id": "runtime_evidence_passport"
+    },
+    {
+      "id": "evidence_seal"
+    },
+    {
+      "id": "challenge"
+    },
+    {
+      "id": "review"
+    },
+    {
+      "id": "supersession"
+    },
+    {
+      "id": "preservation_artifact"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "series": "Runtime Evidence Standard",
+  "version": "1.0-rfc-draft",
+  "rfcs": [
+    {
+      "rfc": "RES-RFC-0000",
+      "title": "RES RFC Process and Status Model",
+      "status": "draft",
+      "target": "RES 1.0",
+      "path": "0000-res-rfc-process.md"
+    },
+    {
+      "rfc": "RES-RFC-0001",
+      "title": "RES Core Architecture and Invariants",
+      "status": "draft",
+      "target": "RES 1.0",
+      "path": "0001-res-core.md"
+    },
+    {
+      "rfc": "RES-RFC-0002",
+      "title": "Source Qualification",
+      "status": "draft",
+      "target": "RES 1.0",
+      "path": "0002-source-qualification.md"
+    },
+    {
+      "rfc": "RES-RFC-0003",
+      "title": "Canonical Runtime",
+      "status": "draft",
+      "target": "RES 1.0",
+      "path": "0003-canonical-runtime.md"
+    },
+    {
+      "rfc": "RES-RFC-0004",
+      "title": "Runtime Evidence Identity and Provenance",
+      "status": "draft",
+      "target": "RES 1.0",
+      "path": "0004-runtime-evidence-identity.md"
+    },
+    {
+      "rfc": "RES-RFC-0005",
+      "title": "Evidence Status, Support Classes, and Missingness",
+      "status": "draft",
+      "target": "RES 1.0",
+      "path": "0005-evidence-status-and-missingness.md"
+    },
+    {
+      "rfc": "RES-RFC-0006",
+      "title": "Bounded Findings",
+      "status": "draft",
+      "target": "RES 1.0",
+      "path": "0006-bounded-findings.md"
+    },
+    {
+      "rfc": "RES-RFC-0007",
+      "title": "Evidence Lifecycle Objects and Issuance",
+      "status": "draft",
+      "target": "RES 1.0",
+      "path": "0007-lifecycle-and-issuance.md"
+    },
+    {
+      "rfc": "RES-RFC-0008",
+      "title": "Challenge, Counterevidence, Review, and Supersession",
+      "status": "draft",
+      "target": "RES 1.0",
+      "path": "0008-challenge-and-revision.md"
+    },
+    {
+      "rfc": "RES-RFC-0009",
+      "title": "Preservation and Interchange",
+      "status": "draft",
+      "target": "RES 1.0",
+      "path": "0009-preservation-and-interchange.md"
+    },
+    {
+      "rfc": "RES-RFC-0010",
+      "title": "Conformance Profiles and Test Requirements",
+      "status": "draft",
+      "target": "RES 1.0",
+      "path": "0010-conformance.md"
+    },
+    {
+      "rfc": "RES-RFC-0011",
+      "title": "RES / EGC Handoff Boundary",
+      "status": "draft",
+      "target": "RES 1.0",
+      "path": "0011-res-egc-boundary.md"
+    },
+    {
+      "rfc": "RES-RFC-0012",
+      "title": "JSON Interchange Profile",
+      "status": "draft",
+      "target": "RES 1.0",
+      "path": "0012-json-interchange.md"
+    }
+  ]
+}

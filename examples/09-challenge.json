@@ -1,0 +1,15 @@
+{
+  "res_version": "1.0-draft",
+  "version": "1",
+  "created_at": "2026-10-12T15:00:00Z",
+  "provenance": [],
+  "object_type": "challenge",
+  "id": "challenge:example-1",
+  "target_id": "finding:example-1",
+  "challenge_type": "scope",
+  "reason": "Reviewer asks whether source interval is sufficient to support the full temporal scope.",
+  "challenger": {
+    "role": "external_reviewer"
+  },
+  "status": "open"
+}

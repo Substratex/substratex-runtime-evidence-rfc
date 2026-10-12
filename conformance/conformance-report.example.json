@@ -1,0 +1,26 @@
+{
+  "res_version": "1.0-draft",
+  "implementation": {
+    "name": "Example RES Implementation",
+    "version": "0.0.0",
+    "independent_of_reference": true
+  },
+  "profile": "RES-Core",
+  "result": "partial",
+  "dimensions": {
+    "schema_conformance": "pass",
+    "identity_conformance": "not_tested",
+    "lineage_conformance": "not_tested",
+    "missingness_conformance": "pass",
+    "scope_conformance": "not_applicable",
+    "lifecycle_conformance": "not_applicable",
+    "issuance_conformance": "not_applicable",
+    "preservation_conformance": "not_applicable",
+    "egc_handoff_conformance": "not_tested"
+  },
+  "tests": [
+    {"id": "RES-CORE-MISSINGNESS-001", "result": "pass"},
+    {"id": "RES-CORE-VERSION-001", "result": "not_tested"}
+  ],
+  "generated_at": "2026-10-12T15:00:00Z"
+}

@@ -1,0 +1,7 @@
+{
+  "case": "missingness_collapsed",
+  "description": "Non-conforming semantic example: implementation has not_computable evidence but exports numeric zero without missingness disclosure.",
+  "input_missingness": "not_computable",
+  "exported_value": 0,
+  "expected": "fail"
+}

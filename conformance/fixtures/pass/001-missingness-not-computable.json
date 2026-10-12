@@ -1,0 +1,30 @@
+{
+  "res_version": "1.0-draft",
+  "version": "1",
+  "created_at": "2026-10-12T15:00:00Z",
+  "provenance": [],
+  "object_type": "bounded_finding",
+  "id": "finding:lead-time",
+  "evidence_record_id": "rer:1",
+  "evidence_dependencies": [
+    "marker:t-star"
+  ],
+  "method_id": "lead-time",
+  "method_version": "1.0",
+  "support_class": "derived",
+  "scope": {
+    "temporal": "run:1"
+  },
+  "status": "unavailable",
+  "claim_boundary_ref": "boundary:lead-time",
+  "missingness": [
+    {
+      "code": "not_computable",
+      "field": "lead_time",
+      "reason": "failure anchor not available"
+    }
+  ],
+  "review_state": {
+    "status": "unchallenged"
+  }
+}

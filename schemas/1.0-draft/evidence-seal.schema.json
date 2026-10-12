@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:substratex:res:1.0:schema:evidence-seal",
+  "title": "RES Evidence Seal",
+  "allOf": [
+    {
+      "$ref": "urn:substratex:res:1.0:schema:common#/$defs/baseEnvelope"
+    },
+    {
+      "type": "object",
+      "required": [
+        "object_type",
+        "covered_ids",
+        "integrity"
+      ],
+      "properties": {
+        "object_type": {
+          "const": "evidence_seal"
+        },
+        "covered_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "integrity": {
+          "$ref": "urn:substratex:res:1.0:schema:common#/$defs/integrityRef"
+        },
+        "creation_conditions": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      }
+    }
+  ]
+}

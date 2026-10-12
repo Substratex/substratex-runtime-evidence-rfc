@@ -1,0 +1,37 @@
+{
+  "namespace": "urn:substratex:res:1.0:vocab:missingness",
+  "terms": [
+    {
+      "id": "not_supplied",
+      "definition": "The required material was not supplied."
+    },
+    {
+      "id": "not_observed",
+      "definition": "The condition or field was not observed in the eligible evidence."
+    },
+    {
+      "id": "unavailable",
+      "definition": "The material is known or expected but unavailable to the current evidence process."
+    },
+    {
+      "id": "not_eligible",
+      "definition": "Material exists but is not eligible under the governing source or method contract."
+    },
+    {
+      "id": "not_computable",
+      "definition": "A required computation cannot be validly performed from the available eligible inputs."
+    },
+    {
+      "id": "withheld",
+      "definition": "Material is intentionally withheld under a declared disclosure, privacy, security, or licensing condition."
+    },
+    {
+      "id": "partial",
+      "definition": "Only part of the required material or scope is available."
+    },
+    {
+      "id": "conflicting",
+      "definition": "Eligible materials conflict in a way that remains unresolved."
+    }
+  ]
+}

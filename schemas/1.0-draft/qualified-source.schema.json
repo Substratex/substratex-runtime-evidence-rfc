@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:substratex:res:1.0:schema:qualified-source",
+  "title": "RES Qualified Source",
+  "allOf": [
+    {
+      "$ref": "urn:substratex:res:1.0:schema:common#/$defs/baseEnvelope"
+    },
+    {
+      "type": "object",
+      "required": [
+        "object_type",
+        "source_type",
+        "qualification_status",
+        "source_reference"
+      ],
+      "properties": {
+        "object_type": {
+          "const": "qualified_source"
+        },
+        "source_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_reference": {
+          "type": "string",
+          "minLength": 1
+        },
+        "adapter_id": {
+          "type": "string"
+        },
+        "adapter_version": {
+          "type": "string"
+        },
+        "qualification_status": {
+          "enum": [
+            "qualified",
+            "qualified_with_limitations",
+            "incomplete",
+            "conflicting",
+            "unsupported",
+            "rejected"
+          ]
+        },
+        "source_digest": {
+          "$ref": "urn:substratex:res:1.0:schema:common#/$defs/integrityRef"
+        },
+        "transformation_provenance": {
+          "type": "array",
+          "items": {
+            "$ref": "urn:substratex:res:1.0:schema:common#/$defs/provenanceRelation"
+          }
+        },
+        "role_event_mapping": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "missingness": {
+          "type": "array",
+          "items": {
+            "$ref": "urn:substratex:res:1.0:schema:common#/$defs/missingness"
+          }
+        },
+        "coverage": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      }
+    }
+  ]
+}

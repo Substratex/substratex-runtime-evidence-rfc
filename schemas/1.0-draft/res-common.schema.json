@@ -1,0 +1,210 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:substratex:res:1.0:schema:common",
+  "title": "RES Common Definitions",
+  "$defs": {
+    "identifier": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "supportClass": {
+      "type": "string",
+      "enum": [
+        "source_observed",
+        "computed",
+        "derived",
+        "proxy",
+        "interpretive",
+        "experimental"
+      ]
+    },
+    "missingnessCode": {
+      "type": "string",
+      "enum": [
+        "not_supplied",
+        "not_observed",
+        "unavailable",
+        "not_eligible",
+        "not_computable",
+        "withheld",
+        "partial",
+        "conflicting"
+      ]
+    },
+    "missingness": {
+      "type": "object",
+      "required": [
+        "code"
+      ],
+      "properties": {
+        "code": {
+          "$ref": "#/$defs/missingnessCode"
+        },
+        "field": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "scope": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "scope": {
+      "type": "object",
+      "properties": {
+        "temporal": {},
+        "operational": {},
+        "source": {},
+        "population": {},
+        "audience": {
+          "type": [
+            "string",
+            "array"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "provenanceRelation": {
+      "type": "object",
+      "required": [
+        "relation",
+        "from",
+        "to"
+      ],
+      "properties": {
+        "relation": {
+          "type": "string"
+        },
+        "from": {
+          "type": "string"
+        },
+        "to": {
+          "type": "string"
+        },
+        "method_id": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "integrityRef": {
+      "type": "object",
+      "required": [
+        "algorithm",
+        "digest",
+        "scope"
+      ],
+      "properties": {
+        "algorithm": {
+          "type": "string"
+        },
+        "digest": {
+          "type": "string"
+        },
+        "scope": {
+          "type": "string"
+        },
+        "covered_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "reviewState": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "unchallenged",
+            "challenged",
+            "under_review",
+            "disputed",
+            "superseded",
+            "withdrawn"
+          ]
+        },
+        "challenge_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "review_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "supersession_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "baseEnvelope": {
+      "type": "object",
+      "required": [
+        "res_version",
+        "object_type",
+        "id",
+        "version"
+      ],
+      "properties": {
+        "res_version": {
+          "const": "1.0-draft"
+        },
+        "object_type": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "creation_event_ref": {
+          "type": "string"
+        },
+        "provenance": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/provenanceRelation"
+          }
+        }
+      }
+    }
+  }
+}

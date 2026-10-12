@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:substratex:res:1.0:schema:runtime-evidence-passport",
+  "title": "RES Runtime Evidence Passport",
+  "allOf": [
+    {
+      "$ref": "urn:substratex:res:1.0:schema:common#/$defs/baseEnvelope"
+    },
+    {
+      "type": "object",
+      "required": [
+        "object_type",
+        "evidence_record_id",
+        "run_id",
+        "canonical_runtime_id",
+        "source_qualification_refs",
+        "governing_versions",
+        "issuance_profile",
+        "issuance_result",
+        "disclosure_state",
+        "non_certifications"
+      ],
+      "properties": {
+        "object_type": {
+          "const": "runtime_evidence_passport"
+        },
+        "evidence_record_id": {
+          "type": "string"
+        },
+        "run_id": {
+          "type": "string"
+        },
+        "canonical_runtime_id": {
+          "type": "string"
+        },
+        "source_qualification_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "governing_versions": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "issuance_profile": {
+          "type": "string"
+        },
+        "issuance_result": {
+          "type": "string"
+        },
+        "integrity_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "urn:substratex:res:1.0:schema:common#/$defs/integrityRef"
+          }
+        },
+        "disclosure_state": {
+          "type": "object",
+          "additionalProperties": true
+        },
+        "claim_boundary_summary": {
+          "type": "object",
+          "additionalProperties": true
+        },
+        "non_certifications": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  ]
+}

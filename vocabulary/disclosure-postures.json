@@ -1,0 +1,21 @@
+{
+  "namespace": "urn:substratex:res:1.0:vocab:disclosure",
+  "terms": [
+    {
+      "id": "metadata_only",
+      "definition": "Identity, version, issuance, integrity, and disclosure metadata without evidence content sufficient for recomputation."
+    },
+    {
+      "id": "derived_evidence_only",
+      "definition": "Derived or bounded evidence is included while underlying source material is not disclosed."
+    },
+    {
+      "id": "redacted_source",
+      "definition": "Source material is included with declared redactions that may limit verification or recomputation."
+    },
+    {
+      "id": "complete_source",
+      "definition": "The declared source package is included; independent re-execution may still depend on methods, versions, environments, and licenses."
+    }
+  ]
+}

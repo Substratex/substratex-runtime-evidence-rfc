@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:substratex:res:1.0:schema:challenge",
+  "title": "RES Challenge",
+  "allOf": [
+    {
+      "$ref": "urn:substratex:res:1.0:schema:common#/$defs/baseEnvelope"
+    },
+    {
+      "type": "object",
+      "required": [
+        "object_type",
+        "target_id",
+        "challenge_type",
+        "reason",
+        "status"
+      ],
+      "properties": {
+        "object_type": {
+          "const": "challenge"
+        },
+        "target_id": {
+          "type": "string"
+        },
+        "challenge_type": {
+          "enum": [
+            "source",
+            "identity",
+            "method",
+            "scope",
+            "status",
+            "finding",
+            "missingness",
+            "integrity",
+            "preservation",
+            "other"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "challenger": {
+          "type": "object",
+          "additionalProperties": true
+        },
+        "counterevidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "status": {
+          "enum": [
+            "open",
+            "under_review",
+            "resolved",
+            "withdrawn"
+          ]
+        }
+      }
+    }
+  ]
+}

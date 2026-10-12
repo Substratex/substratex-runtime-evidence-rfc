@@ -1,0 +1,44 @@
+{
+  "namespace": "urn:substratex:res:1.0:vocab:provenance",
+  "terms": [
+    {
+      "id": "supplied_as"
+    },
+    {
+      "id": "qualified_from"
+    },
+    {
+      "id": "canonicalized_from"
+    },
+    {
+      "id": "computed_from"
+    },
+    {
+      "id": "derived_from"
+    },
+    {
+      "id": "projected_from"
+    },
+    {
+      "id": "challenged_by"
+    },
+    {
+      "id": "countered_by"
+    },
+    {
+      "id": "reviewed_by"
+    },
+    {
+      "id": "superseded_by"
+    },
+    {
+      "id": "sealed_by"
+    },
+    {
+      "id": "preserved_as"
+    },
+    {
+      "id": "redacted_from"
+    }
+  ]
+}

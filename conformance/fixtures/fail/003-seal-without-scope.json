@@ -1,0 +1,9 @@
+{
+  "case": "seal_without_scope",
+  "description": "Non-conforming semantic example: digest is asserted without declaring the evidence-bearing scope it covers.",
+  "seal": {
+    "algorithm": "sha256",
+    "digest": "abc123"
+  },
+  "expected": "fail"
+}
